@@ -1,0 +1,9 @@
+monnaie source : <input type="text" [(ngModel)]="source"/> <br>
+<input type="button" (click)="onLoadTauxChange()" 
+                     value="load tauxChange" /> <br/>
+<table border="1">
+   <tr><th>currency</th><th>rate</th></tr>
+   <tr *ngFor="let t of listeTauxChange">
+      <td>{{t.currency}}</td> <td>{{t.rate}}</td>
+   </tr>
+</table>
